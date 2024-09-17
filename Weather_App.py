@@ -1,5 +1,10 @@
 import requests  # type: ignore
+from PIL import Image
 import streamlit as st
+
+icon_img = Image.open('website_icon.png')
+
+st.set_page_config(page_title="Weather App", page_icon=icon_img)
 
 key = st.secrets["api_key"][0]
 
