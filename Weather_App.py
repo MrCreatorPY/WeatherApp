@@ -1,4 +1,4 @@
-import requests  # type: ignore
+import requests  
 from PIL import Image
 import streamlit as st
 
@@ -34,7 +34,7 @@ def GetWeather(city):
             print("Failed to download image!")
             exit()
 
-        filename = "gg.png" # You can name the file as you want
+        filename = "gg.png" 
         with open(filename, 'wb') as file:
             file.write(image.content)
 
